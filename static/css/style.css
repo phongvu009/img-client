@@ -1,0 +1,18 @@
+nav .brand-logo {
+  padding-left: 20px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#img-preview {
+  max-width: 60%;
+}
+
+#result > p {
+  font-size: 50px;
+  font-style: italic;
+  background: #ee6e73;
+  color: #fff;
+}

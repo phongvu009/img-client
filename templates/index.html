@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}"  media="screen,projection"/>
+      <!-- custom CSS -->
+      <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+         <nav>
+            <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Image Classification</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                
+            </ul>
+            </div>
+         </nav>
+        <br>
+        <section class="upload-image container">
+            <form class= " s12" >
+                <div class='row'>
+
+                    <label> upload file</label>
+                    
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Browse</span>
+                            <!-- accept image only -->
+                            <input id ="ipt-img" type="file" accept=".jpg, .jpeg , .png"  />
+                        </div>
+
+                        <div class="file-path-wrapper">
+                            <input  class="file-path validate"  
+                                     type="text" 
+                                    placeholder="choose file" 
+                                    
+                                    />
+                        </div>
+
+                    </div>
+                    
+                    <div class="img-container ">
+                      <img id="img-preview"  >
+                    </div>
+                
+                  </div>
+
+
+                
+                  <button class="sbm-btn btn waves-effect waves-light " type="submit" >Upload
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+           
+        </section>
+
+        <div id="result" class="center">
+
+        </div>
+
+       <!--JavaScript at end of body for optimized loading-->
+      <!-- <script type="text/javascript" src="static/js/materialize.min.js"></script> -->
+      <script type="text/javascript" src="{{ url_for('static',filename='js/materialize.min.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}">
+        
+      </script>
+     
+    </body>
+  </html>
