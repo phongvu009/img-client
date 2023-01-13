@@ -5,7 +5,7 @@ const result = document.querySelector("#result");
 
 const baseURL = "http://127.0.0.1:5000";
 // using render server end-point
-// const baseURL = 'https://image-reg-pz6o.onrender.com'
+const baseURL = 'https://img-service.onrender.com'
 let imgFile = "";
 
 const fet = async (url, verb, data) => {
