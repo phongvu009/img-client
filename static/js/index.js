@@ -3,7 +3,7 @@ const iptImage = document.querySelector("#ipt-img");
 const imgDisplay = document.querySelector("#img-preview");
 const result = document.querySelector("#result");
 
-// const baseURL = "http://127.0.0.1:5000";
+const baseURL = "http://127.0.0.1:5000";
 // using render server end-point
 const baseURL = 'https://img-service.onrender.com'
 let imgFile = "";
